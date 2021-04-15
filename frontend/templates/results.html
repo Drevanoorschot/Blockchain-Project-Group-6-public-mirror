@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BCDLT Results</title>
+</head>
+<body>
+<h1>BCDLT Results</h1>
+
+<table style="width:100%">
+    <tr>
+        <th>Address</th>
+        <th>Time period</th>
+        <th>Time</th>
+        <th>Results</th>
+        <th>Failed</th>
+        <th>Found</th>
+    </tr>
+    {% for item in results %}
+        <tr>
+            <td>{{ item[0] }}</td>
+            <td>{{ item[1] }}</td>
+            <td>{{ item[2] }}</td>
+            <td>{{ item[3] }}</td>
+            <td>{{ item[4] }}</td>
+            <td>{{ item[5] }}</td>
+        </tr>
+    {% endfor %}
+</table>
+
+</body>
+</html>
